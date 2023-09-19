@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="video-container">
+        <video autoplay src=""></video>
+        <div class="actions-container">
+            <button class="record-action-container">
+                <div class="record-action">
+                </div>
+            </button>
+            <button class="capture-action-container">
+                <div class="capture-action">
+                </div>
+            </button>
+        </div>
+        <div class="timer-container">
+        </div>
+        <div class="filters-container">
+            <button class="filter orange"></button>
+            <button class="filter red"></button>
+            <button class="filter green"></button>
+            <button class="filter blue"></button>
+            <button class="filter transparent"></button>
+        </div>
+        <button class="move-to-gallery">
+            <span class="material-symbols-outlined gallery-icon">
+                gallery_thumbnail
+            </span>
+        </button>
+        <div class="filter-overlay" />
+    </div>
+    </div>
+    <script src="db.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        const moveTogallery = document.querySelector('.move-to-gallery')
+        moveTogallery.addEventListener('click', () => {
+            location.assign('./gallery.html')
+        })
+    </script>
+</body>
+
+</html>
